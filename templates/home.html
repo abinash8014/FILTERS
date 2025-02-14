@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- upper -->
+    <h1>Hello i am {{name | upper}}, You can contact with me with this number {{pno}}, I am a animal lover so i have {{count}} {{pet | upper}}s </h1>
+    <!-- lower -->
+    <h1>Hello i am {{name | lower}}, You can contact with me with this number {{pno}}, I am a animal lover so i have {{count}} {{pet | lower}}s </h1>
+    <!-- capfirst -->
+    <h1>Hello i am {{name | capfirst}}, You can contact with me with this number {{pno}}, I am a animal lover so i have {{count}} {{pet | capfirst}}s </h1>
+    <!-- title -->
+    <h1>{{msg | title}}</h1>
+    <!-- slice  -->
+    <h1>{{msg | slice:"4"}}</h1>
+    <!-- truncatechars -->
+     <h1>{{msg | truncatechars:"10"}}</h1>
+     <!-- truncatewords -->
+      <h1>{{msg | truncatewords:"3"}}</h1>
+      <!-- pluralize with one argument-->
+      <h1>Hello i am {{name}}, You can contact with me with this number {{pno}}, I am a animal lover so i have {{count}} dog{{count |pluralize:'s'}}</h1>
+      <!-- pluralize with multiple aruguments  -->
+      <h1>Hello i am {{name}}, You can contact with me with this number {{pno}}, I am a insect lover so i have {{count}} butterfl{{count |pluralize:'y,ies'}}</h1>
+</html>
